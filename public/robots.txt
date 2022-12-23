@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /public/user/
+
+User-agent: *
+Disallow: /public/admin/
+
+User-agent: *
+Disallow: /admin/
+
+User-agent: *
+Disallow: /user/
+
+User-agent: *
+Allow: /
