@@ -82,6 +82,12 @@ class Block extends Model
         return $query->where('type', 1);
     }
 
+        /**
+     * Scope a query to only include "карта добрих справ" inforamtion blocks.
+     * 
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
     public function scopeTypeMapBlock($query)
     {
         return $query->where('type', 2);
