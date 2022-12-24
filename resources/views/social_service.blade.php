@@ -10,9 +10,6 @@
             <span>{{ $social->first_title }}</span>
         </div>
         <div class="info-page">
-            <div class="description">{!! $social->description !!}</div>
-
-            <modal-social button="{{route('albums')}}"/>
-
+            <div class="description margin-bottom">{!! $social->description !!}</div>
         </div>
 @endsection
