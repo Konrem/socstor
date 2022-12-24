@@ -144,6 +144,9 @@ class HomeController extends Controller
     {
         return view('map', [
             'map' => \App\Page::find(5),
+            'info01' => \App\Block::typeMapBlock()->where('id', 7)->get(),
+            'info02' => \App\Block::typeMapBlock()->where('id', 8)->get(),
+            'info03' => \App\Block::typeMapBlock()->where('id', 9)->get(),
         ]);
     }
 

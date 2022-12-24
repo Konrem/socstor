@@ -19,7 +19,7 @@ class BlockController extends Controller
     public function index()
     {
         return view ('user.blocks.index', [
-            'blocks' => Block::infoBlocks()->paginate(6),
+            'blocks' => Block::infoBlocks()->paginate(9),
         ]);
     }
 
@@ -105,11 +105,10 @@ class BlockController extends Controller
      */
     public function update(Request $request, Block $block)
     {
-        if ($block->type == 1) {
+        if (($block->type == 1) || ($block->type == 2)) {
             $dataValidate = $request->validate([
                 'title' => 'required|string|max:255',
                 'text' => 'required|string',
-                'type' => 'required|boolean'
             ]);
         } else {
             $dataValidate = $request->validate([
@@ -117,7 +116,7 @@ class BlockController extends Controller
                 'img' => 'nullable|image|max:2048',
                 'text' => 'required|string',
                 'link' => 'required|url|max:255',
-                'type' => 'required|boolean'
+                'type' => 'required|integer'
             ]);
         }
         
@@ -130,11 +129,10 @@ class BlockController extends Controller
             $file = $block->img;  
         }
 
-        if ($block->type == 1) {
+        if (($block->type == 1) || ($block->type == 2)) {
             $block->update([
                 'title' => $request->title,
                 'text' => $request->text,
-                'type' => $request->type
             ]);
         } else {
             $block->update([

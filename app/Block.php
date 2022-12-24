@@ -35,6 +35,9 @@ class Block extends Model
             case 1:
                 $type = 'Стипендіальне забезпечення';
                 break;
+            case 2:
+                $type = 'Карта добрих справ';
+                break;
         }
 
         return $type;
@@ -79,6 +82,11 @@ class Block extends Model
         return $query->where('type', 1);
     }
 
+    public function scopeTypeMapBlock($query)
+    {
+        return $query->where('type', 2);
+    }
+
     /**
      * Scope a query to only include emploee
      * 
@@ -87,7 +95,7 @@ class Block extends Model
      */
     public function scopeTypeEmploee($query)
     {
-        return $query->where('type', 2);
+        return $query->where('type', 3);
     }
     
     /**
@@ -98,7 +106,7 @@ class Block extends Model
      */
     public function scopeInfoBlocks($query)
     {
-        return $query->where('type', '!=', 2);
+        return $query->where('type', '!=', 3);
     }
 
     /**
