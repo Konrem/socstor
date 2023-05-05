@@ -23,7 +23,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         return view('welcome', [
-            'lastNews' => News::lastNew(4),
+            'lastNews' => News::lastNew(5),
             'mainInfo' => \App\Block::typeMainInfo()->get(),
             'configs' => \App\Config::find(1),
             'slider' => \App\Slider::where('type', 2)->get(),
