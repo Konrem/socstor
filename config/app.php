@@ -179,7 +179,6 @@ return [
 
         Intervention\Image\ImageServiceProvider::class,
         // Add CKEditor...
-        Unisharp\Ckeditor\ServiceProvider::class,
 	    // For localize date
         'Jenssegers\Date\DateServiceProvider',
         App\Providers\SocServiceProvider::class

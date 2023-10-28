@@ -33,7 +33,7 @@
                         @csrf
                         @method('DELETE')
                         
-                        <a class="btn btn-default" href="{{ route('admin.user-management.admins.edit', ['id'=> $admin->id]) }}">
+                        <a class="btn btn-default" href="{{ route('admin.user-management.admins.edit', ['admin'=> $admin->id]) }}">
                             <i class="far fa-edit"></i>
                         </a>
                         @if ( Auth::id() !== $admin->id)
