@@ -3,14 +3,18 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Url;
 use Jenssegers\Date\Date;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 
+Paginator::useBootstrap();
+
 class News extends Model
 {
+	
     // Mass assigned
     protected $fillable = ['date', 'title', 'text', 'photo', 'slug', 'published', 'meta_keywords', 'meta_description'];
 
