@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Albums;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Arr;
 use App\Photos;
 use Image;
 use Illuminate\Support\Facades\Validator;

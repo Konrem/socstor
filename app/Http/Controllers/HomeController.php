@@ -10,6 +10,7 @@ use App\Albums;
 use Illuminate\Http\Request;
 use Jenssegers\Date\Date;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Arr;
 use Illuminate\Validation\Rule;
 
 class HomeController extends Controller
