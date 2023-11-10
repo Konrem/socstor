@@ -1,19 +1,19 @@
     <div class="menu">
         <div class="content-menu">  
-            <div class="logo logo-mobile">
-                    <a class="menu-link" href="{{route('welcome')}}">
-                        <img src="images/logo.png" alt="Студенський відділ волонтерів СумДУ">
-                    </a>
-                </div>
+            {{-- <div class="logo logo-mobile">
+                <a class="menu-link" href="{{route('welcome')}}">
+                    <img src="images/logo.png" alt="Студенський відділ волонтерів СумДУ">
+                </a>
+            </div> --}}
             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
             <label class="btn-menu" for="hmt"></label>
             <!-- <ul class="hidden-menu" > -->
             <ul class="menu-block" >
-                <li class="logo logo-mobile-none">
+                {{-- <li class="logo logo-mobile-none">
                     <a class="menu-link" href="{{route('welcome')}}">
                         <img src="images/logo.png" alt="Студенський відділ волонтерів СумДУ">
                     </a>
-                </li>
+                </li> --}}
                 <li class="menu-item {{ (request()->is('/')) ? 'active' : '' }}">
                     <a class="menu-link" href="{{route('welcome')}}">
                         Головна
@@ -31,7 +31,7 @@
                 </li>
                 <li class="menu-item {{ (request()->is('social*')) ? 'active' : '' }}">
                     <a class="menu-link" href="{{route('social')}}">
-                        Студентська соціальна служба
+                        Особам з особливими освітніми потребами
                     </a>
                 </li>
                 <li class="menu-item {{ (request()->is('department*')) ? 'active' : '' }}">

@@ -3,6 +3,7 @@ use Illuminate\Foundation\Auth\User;
 use Intervention\Image\Facades\Image;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\User\AlbumController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
