@@ -1,5 +1,5 @@
 @extends('admin.layouts.app_admin')
-@section('meta_title', 'редагування конфігурацій додатка')
+@section('meta_title', 'Редагування конфігурацій додатка')
 @section('content')
     <div class="container-fluid">
     @component('admin.components.breadcrumbs')

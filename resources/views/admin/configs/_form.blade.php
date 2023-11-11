@@ -77,7 +77,7 @@
 @enderror
 
 <div class="form-group">
-    <label for="instagram">instagram</label>
+    <label for="instagram">Instagram</label>
     <input type="text" class="form-control" name="instagram" id="instagram" required
         value="@if( old('instagram') ){{old('instagram')}}@else{{$config->instagram ?? '' }}@endif" maxlength="255" onkeyup="inputValidation(this.value, 'instagram_val', '255')">
         <small id="instagram_val"></small>
