@@ -3,8 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Str;
 use App\Photos;
+
+Paginator::useBootstrap();
 
 class Albums extends Model
 {

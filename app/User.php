@@ -4,7 +4,10 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
+Paginator::useBootstrap();
 
 class User extends Authenticatable
 {
