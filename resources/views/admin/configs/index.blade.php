@@ -73,7 +73,7 @@
         </tbody>
     </table>
 
-    <a class="btn btn-primary" role="button" href="{{ route('admin.configs.edit', ['id' => $configs->id] ) }}" >Редагувати</a>
+    <a class="btn btn-primary" role="button" href="{{ route('admin.configs.edit', ['config' => $configs->id]) }}" >Редагувати</a>
     
 </div>
 @endsection

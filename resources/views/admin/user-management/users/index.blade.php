@@ -32,7 +32,7 @@
                         method="post">
                         @csrf
                         @method('DELETE')
-                        <a class="btn btn-default" href="{{ route('admin.user-management.users.edit', ['id'=> $user->id]) }}">
+                        <a class="btn btn-default" href="{{ route('admin.user-management.users.edit', ['user'=> $user->id]) }}">
                             <i class="far fa-edit"></i>
                         </a>
                         <button type="submit" class="btn"><i class="fas fa-trash-alt"></i></button>
